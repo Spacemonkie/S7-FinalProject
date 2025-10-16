@@ -10,7 +10,7 @@
   <div class="container">
     <div class="login-box">
       <h2>Registration</h2>
-      <form action="registerations.php" onsubmit="href='registerations.php'" method="POST">
+      <form action="registerations.php" onsubmit="href='./registerations.php'" method="POST">
         
         <div class="input-box">
             <label>Username</label>
@@ -46,4 +46,5 @@
   </div>
 </body>
 </html>
+
 
