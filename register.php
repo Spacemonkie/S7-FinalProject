@@ -38,7 +38,7 @@
 
          <input type="submit" class="btn" value="Register" />
         <div class="signup-link">
-          Already a Member? <a href="login_phpsql.html">Login</a>
+          Already a Member? <a href="./login_phpsql.html">Login</a>
         </div>
 
       </form>
@@ -46,3 +46,4 @@
   </div>
 </body>
 </html>
+
