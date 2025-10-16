@@ -1,0 +1,65 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Sign in</title>
+    <!-- Insert style.css file -->
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+</head>
+<body>
+
+    
+
+    <div id="frm">
+        <h1>Login</h1>
+        <form name="f1" action="authentication.php"  onsubmit="return validation()" method="POST">
+            <p>
+                <label>UserName:</label>
+                <input type="text" id="user" name="user" />
+            </p>
+            <p>
+                <label>Password:</label>
+                <input type="password" id="pass" name="pass" />
+            </p>
+            <p>
+                <input type="submit" class="btn" value="Login" />
+            </p>
+        </form>
+        <form action="register.php" method="post">
+            <input type="submit" class="btn" value="Register" />
+        </form>
+         <form action="userdetails.php" method="post">
+            <input type="submit" class="btn" value="Unsubscribe" />
+        </form>
+    <div class="signup-link">
+           <a href="forgotpassword.php">Forgot password??</a>
+        </div>
+    </div>
+    </div>
+
+    <!-- Validation for empty fields -->
+    <script>
+        function validation() {
+            var id = document.f1.user.value;
+            var ps = document.f1.pass.value;
+
+            if (id.length === 0 && ps.length === 0) {
+                alert("User Name and Password fields are empty");
+                return false;
+            } else {
+                if (id.length === 0) {
+                    alert("User Name is empty");
+                    return false;
+                }
+                if (ps.length === 0) {
+                    alert("Password field is empty");
+                    return false;
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
